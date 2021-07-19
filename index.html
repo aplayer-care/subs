@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>aPlayer - Subtitles</title>
+    <meta name="viewport"
+        content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 8px;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 4px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: -5px -5px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the counter cards */
+        .card {
+            height: 110px;
+            position: relative;
+            display: block;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 0.5px solid #bcbfc0;
+        }
+
+        .card .logo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin: 0;
+            position: relative;
+            font-size: 2vw;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 50%;
+            }
+
+            .card h3 {
+                font-size: 5vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <a class="card" href="https://subscene.com" style="background: #1e455b;">
+                <img class="logo" src="logo/subscene.png" />
+            </a>
+        </div>
+        <div class="column">
+            <a class="card" href="https://yts-subs.com" style="background: #183d51;">
+                <img class="logo" src="logo/yifysubtitles.png" />
+            </a>
+        </div>
+        <div class="column">
+            <a class="card" href="https://www.opensubtitles.com" style="background: #727272;">
+                <img class="logo" src="logo/opensubtitles_beta.png" />
+            </a>
+        </div>
+        <div class="column">
+            <a class="card" href="https://www.podnapisi.net" style="background: #4e6ee3; text-align: center;">
+                <h3 style="color: #FFF; font-weight: 700;">Podnapisi.NET</h3>
+            </a>
+        </div>
+        <div class="column">
+            <a class="card" href="https://www.opensubtitles.org" style="background: #000000;">
+                <img class="logo" src="logo/opensubtitles_org.png" />
+            </a>
+        </div>
+        <div class="column">
+            <a class="card" href="https://subdl.com" style="background: #3599da;">
+                <img class="logo" src="logo/subdl.png" />
+            </a>
+        </div>
+        <div class="column">
+            <a class="card" href="https://www.subs4free.info" style="background:#82a5c8;">
+                <img class="logo" src="logo/s4f.png" />
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
